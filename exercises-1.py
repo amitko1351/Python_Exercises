@@ -44,3 +44,10 @@ class BankAccount:
                  else return false
         """
         return self.secret_code == secret_code
+
+def main():
+    # Create a bank account object
+    bank_account = BankAccount(1234, 150)
+
+if __name__ == '__main__':
+    main()
