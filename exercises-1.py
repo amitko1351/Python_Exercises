@@ -28,3 +28,10 @@ class BankAccount:
         # Take the money from the account
         self.account_money -= amount
         return True
+
+    def set_secret_code(self, secret_code):
+        """
+        the function change the secret code
+        :param secret_code: the new secret code
+        """
+        self.secret_code = secret_code
