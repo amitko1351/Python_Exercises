@@ -7,3 +7,6 @@ class BankAccount:
         """
         self.secret_code = secret_code
         self.initial_money = initial_money
+
+    def print_balance(self):
+        print("the balance is {}".format(self.initial_money))
