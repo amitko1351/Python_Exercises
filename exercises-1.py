@@ -35,3 +35,12 @@ class BankAccount:
         :param secret_code: the new secret code
         """
         self.secret_code = secret_code
+
+    def authenticate_account(self, secret_code):
+        """
+        the function authenticate the account  
+        :param secret_code: the secret code of the account
+        :return: if the secret code is correct return true
+                 else return false
+        """
+        return self.secret_code == secret_code
