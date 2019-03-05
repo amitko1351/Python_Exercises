@@ -9,4 +9,7 @@ class BankAccount:
         self.account_money = initial_money
 
     def print_balance(self):
+        """
+        print the current balance of the bank account
+        """
         print("the balance is {}".format(self.account_money))
