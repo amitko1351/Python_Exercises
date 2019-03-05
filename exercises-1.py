@@ -6,7 +6,7 @@ class BankAccount:
         :param initial_money: the initial money the bank account has
         """
         self.secret_code = secret_code
-        self.initial_money = initial_money
+        self.account_money = initial_money
 
     def print_balance(self):
-        print("the balance is {}".format(self.initial_money))
+        print("the balance is {}".format(self.account_money))
