@@ -22,3 +22,12 @@ def compress_string(string):
             count_repet = 1
             last_char = char
     return new_string
+
+
+def main():
+    string = input("Enter the string to compress\n")
+    string = compress_string(string)
+    print("the compressed string is {}".format(string))
+
+if __name__ == '__main__':
+    main()
