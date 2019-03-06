@@ -13,3 +13,11 @@ def sum_input_numbers():
         if number.isdigit():
             sum_of_numbers += int(number)
         number = input("Please enter the number (enter stop for result)")
+
+
+def main():
+    sum_input_numbers()
+
+
+if __name__ == "__main__":
+    main()
