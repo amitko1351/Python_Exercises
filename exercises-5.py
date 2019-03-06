@@ -10,7 +10,7 @@ def final_sum(num):
         if num < 10:
             return fsum + num
         fsum = num % 10
-        num = num / 10
+        num = int(num / 10)
 
 
 def sum_digits(digits_to_sum):
@@ -39,7 +39,7 @@ def find_closest_product_to_ten(number):
     :param number: the number which the function work on
     :return: the closest product to ten 
     """
-    return (number / 10 + 1) * 10
+    return (int(number / 10) + 1) * 10
 
 
 def check_id(id):
