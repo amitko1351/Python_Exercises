@@ -1,5 +1,10 @@
 def map_function(function_to_run, params):
-
+    """
+    the map function
+    :param function_to_run: function to run
+    :param params: the parameters to go over
+    :return: the return values
+    """
     # The list of the return values
     return_values = []
     for param in params:
