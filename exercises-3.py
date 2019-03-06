@@ -84,7 +84,7 @@ def check_win(matrix):
     return check_diagonal(matrix)
 
 
-def print_winnig_message(won_player):
+def print_winning_message(won_player):
     if won_player:
         print("the player who won is player number {}".format(str(won_player)))
     else:
@@ -94,7 +94,7 @@ def print_winnig_message(won_player):
 def main():
     matrix = input_game_board()
     won_player = check_win(matrix)
-    print_winnig_message(won_player)
+    print_winning_message(won_player)
 
 if __name__ == '__main__':
     main()
