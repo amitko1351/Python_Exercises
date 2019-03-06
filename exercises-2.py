@@ -15,9 +15,20 @@ def sum_input_numbers():
         number = input("Please enter the number (enter stop for result)\n")
 
 
+def sum_ele_from_list():
+    """
+    sum the elements of the list that entered by the user
+    """
+    # Get the list from he user
+    list_ele = input("Enter the list of number (like that :'1,2,3')\n")
+    # Make a list from the numbers
+    list_ele = [int(num) for num in list_ele.split(",")]
+    print("the sum is {}".format(str(sum(list_ele))))
+
+
 def main():
     sum_input_numbers()
-
+    sum_ele_from_list()
 
 if __name__ == "__main__":
     main()
