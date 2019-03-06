@@ -18,9 +18,10 @@ def compress_string(string):
         if char == last_char:
             count_repet += 1
         else:
-            new_string.join([last_char, str(count_repet)])
+            new_string += last_char + str(count_repet)
             count_repet = 1
             last_char = char
+    new_string += last_char + str(count_repet)
     return new_string
 
 
