@@ -82,3 +82,9 @@ def check_win(matrix):
     if win:
         return win
     return check_diagonal(matrix)
+
+def print_winnig_message(won_player):
+    if won_player:
+        print("the player who won is player number {}".format(str(won_player)))
+    else:
+        print("nobody won it is a draw")
