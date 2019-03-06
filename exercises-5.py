@@ -55,3 +55,14 @@ def check_id(id):
     sum_of_digits = sum_digits(digits_to_sum)
     product_ten = find_closest_product_to_ten(sum_of_digits)
     return int(check_digit) == (product_ten - sum_of_digits)
+
+def main():
+    id_user = input("Enter the ID to check :\n")
+    if check_id(id_user):
+        print("valid ID\n")
+    else:
+        print("invalid ID\n")
+
+
+if __name__ == '__main__':
+    main()
