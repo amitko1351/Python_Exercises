@@ -8,7 +8,7 @@ def input_game_board():
         list = []
         for j in range(3):
             num = input("enter the [{}][{}] ele\n".format(i,j))
-            list.append(num)
+            list.append(int(num))
         matrix.append(list)
     return matrix
 
