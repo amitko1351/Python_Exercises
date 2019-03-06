@@ -1,4 +1,9 @@
 def compress_string(string):
+    """
+    the function compress the string
+    :param string: string to compress
+    :return: the new compressed string
+    """
     # If there is no string return None
     if not string:
         return None
