@@ -15,3 +15,29 @@ def cache_decorator(func):
             # Return the return value
             return return_value
     return warp
+
+
+@cache_decorator
+def fibonaci_element(number_ele):
+    """
+    Find the fibonaci element in the seris that in the place
+    of number_ele
+    :param number_ele: the number of element to find
+    :return: the fibonaci element in the seris that in the place
+    of number_ele
+    """
+    if number_ele == 0:
+        return 0
+    elif number_ele == 1:
+        return 1
+    return fibonaci_element(number_ele-1) + fibonaci_element(number_ele - 2)
+
+
+def main():
+    print(str(fibonaci_element(5)))
+    print(str(fibonaci_element(9)))
+    print(str(fibonaci_element(100)))
+
+
+if __name__ == '__main__':
+    main()
